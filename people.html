@@ -23,6 +23,20 @@
          $( "#footer" ).load( "footer.html" );
       });
       </script>
+
+      <script>
+         $(function(){
+            var $page = jQuery.url.attr("file");
+            $('ul.nav li a').each(function(){
+               var $href = $(this).attr('href');
+               if ( ($href == $page) || ($href == '') ) {
+                  $(this).addClass('on');
+               } else {
+                  $(this).removeClass('on');
+               }
+            });
+         });
+      </script>
       
    </head>
    <body>
