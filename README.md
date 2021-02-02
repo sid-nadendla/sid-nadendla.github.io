@@ -20,4 +20,4 @@ This is a website to showcase various research projects performed by faculty and
 
 ## License
 
-The website is licensed under The MIT License. It is built using a template developed for [University of Illinois Energy Transport Research Lab](http://etrl.mechanical.illinois.edu/).
+The website is licensed under The MIT License. It was built using a template developed for [University of Illinois Energy Transport Research Lab](http://etrl.mechanical.illinois.edu/).
