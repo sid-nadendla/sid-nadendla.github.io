@@ -1,7 +1,7 @@
 
-## [Cyber-Physical Human Systems (CPHS) Lab]{https://sid-nadendla.github.io/} @ Missouri S&T
+## Cyber-Physical Human Systems (CPHS) Lab @ Missouri S&T
 
-This is a website to showcase various research projects performed by faculty and students at CPHS lab @ Missouri S&T. 
+This is a [website]{https://sid-nadendla.github.io/} to showcase various research projects performed by faculty and students at CPHS lab @ Missouri S&T. 
 
 <!-- I built this for my brother years ago, and you can find his current site here: [University of Illinois Energy Transport Research Lab](http://etrl.mechanical.illinois.edu/) -->
 
