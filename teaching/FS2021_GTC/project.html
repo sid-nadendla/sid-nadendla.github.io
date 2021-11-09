@@ -52,21 +52,63 @@
                                     <div dir="ltr">
                                         <!-- <font size="4"><b>Textbook Information</b></font> -->
                                         <h2>Project</h2>
-                                        <h3>Summary and Expected Deliverables</h3>
-                                        <div>TBD</div>
-
+                                        
                                         <h3>Important Dates</h3>
                                         <div>
                                             <ol>
-                                                <li><a>Topic Announcement:</a> Oct 15, 2021</span></li>
-                                                <li><a>First Report:</a>&nbsp; Nov 1, 2021</span></li>
-                                                <li><a>Second Report:</a>&nbsp;Nov 15, 2021</span></li>
-                                                <li><a>Final Report and Presentation:</a>&nbsp;Dec 7/9, 2021</span></li>
+                                                <li><a>Project Announcement:</a> Nov 9, 2021</span></li>
+                                                <li><a>Topic Selection Due:</a>&nbsp; Nov 12, 2021</span></li>
+                                                <li><a>Weekly Update:</a>&nbsp;Fridays during office hours, or after the class between 12:15-1</span></li>
+                                                <li><a>Final Report:</a>&nbsp;Dec 15, 2021</span></li>
                                             </ol>
                                         </div>
                                         <hr>
-                                        <h3>Description</h3>
-                                        <div>TBD</div>
+
+                                        <h3>Expected Deliverables</h3>
+                                        <div>
+                                            Students are expected to report project updates on a weekly basis (either during office hours, or after the class from T/Th 12:15-1). A written report of the project (along with source code) is due by Wed, Dec 15 (during the Finals week), and a Gitlab repository will be released for these submissions. The written report can have a max. of 4 pages (with 1 inch margins and 12 pt. Times New Roman font or equivalent).
+                                        </div>
+                                        <hr>
+
+                                        <h3>Project Description and Expected Deliverables</h3>
+                                        <div>
+                                            The goal of this project is to learn how game theory techniques and tools can be designed/implemented to solve a real world problem. 
+                                            
+                                            In this regard, two options are provided, and each student is expected to pick one of them. 
+
+                                            <ol>
+                                                <li><a>OPTION 1:</a> This option is primarily designed for advanced graduate students and those who are interested in pursuing research in game theory. Interested students can pick a research problem inspired from any real-world application, and demonstrate how this real-world problem can be solved using game-theoretic techniques. Examples of such real-world problems can be found in the references below. </li>
+                                                <li><a>OPTION 2:</a> This option is primarily designed to improve implementation skills to implement bots based on games. Specifically, students are expected to implement <a>Latent Tic-Tac-Toe (LTTT)</a> environment in Python. LTTT is a modified version of the classical Tic-Tac-Toe, where moves are not revealed until after the opponent's next move, and lost if deemed invalid at the time of revelation. You are expected to model LTTT as an imperfect information game, and solve it using two algorithms, namely counterfactual regret-minimization (CFR) and Monte-Carlo CFR with outcome sampling (MCCFR-outcome). The performance of the two algorithms should be compared as shown in Figure 1 in [1]. Necessary reading material will be provided below in the references section.  </li>
+                                            </ol>
+
+                                            Particularly, in Option 2, students may take inspiration from the implementation of classic Tic-Tac-Toe from <a>Petting Zoo</a>'s library, which can be accessed using this <a href="https://github.com/Farama-Foundation/PettingZoo/tree/master/pettingzoo/classic/tictactoe">link</a>.
+
+                                        </div>
+                                        <hr>
+
+                                        <h3>Rubric</h3>
+                                        <div>
+                                            Grades will be assigned based on the students' weekly udpate as well as the written report as shown below:
+                                            <ol>
+                                                <li><a>Modeling the Game:</a> 5 pts</li>
+                                                <li><a>Solution Concept:</a> 5 pts</li>
+                                                <li><a>Results and/or Comparison with Other Approaches:</a> 5 pts</li>
+                                                <li><a>Weekly Updates:</a> 5 pts</li>
+                                            </ol>
+                                        </div>
+                                        <hr>
+
+                                        <h3>References</h3>
+                                        <h4>Regret Minimization in Extensive Games</h4>
+                                        <div>
+                                            <ol>
+                                                <li><a>Counterfactual Regret Minimization:</a> Martin Zinkevich, Michael Johanson, Michael Bowling, and Carmelo Piccione. <a href="http://papers.nips.cc/paper/3306-regret-minimization-in-games-with-inco%20ignorespaces%20mplete-information.pdf">Regret minimization in games with incomplete information.</a> In J.C. Platt, D. Koller, Y. Singer, and S. Roweis, editors, Advances in Neural Information Processing Systems 20, pp. 1729-1736. MIT Press, Cambridge, MA, 2008. </li>
+                                                <li><a>Counterfactual Regret Minimization:</a> Todd W. Neller, Marc Lanctot. <a href="http://modelai.gettysburg.edu/2013/cfr/cfr.pdf">An Introduction to Counterfactual Regret Minimization.</a> A project description (model AI assignment) in their tutorial on "An Introduction to Counterfactual Regret Minimization" in EAAI-2013. </li>
+                                                <li><a>Monte-Carlo Counterfactual Regret Minimization:</a> Marc Lanctot, Kevin Waugh, Martin Zinkevich, and Michael Bowling. <a href="https://papers.nips.cc/paper/3713-monte-carlo-sampling-for-%C3%A9%20%E2%80%94%C3%A6%E2%80%A0%C2%BE-minimization-in-extensive-games.pdf">Monte carlo sampling for regret minimization in extensive games.</a> In Y. Bengio, D. Schuurmans, J. Lafferty, C. K. I. Williams, and A. Culotta, editors, Advances in Neural Information Processing Systems 22, pages 1078-1086. MIT Press, 2009. </li>
+                                                <li><a>Monte-Carlo Counterfactual Regret Minimization:</a> <a href="http://mlanctot.info/files/papers/nips09mccfr_poster.pdf">Poster</a></li>
+                                            </ol>
+                                        </div>
+                                        <h4>Applications: Networks</h4>
                                     </div>
                                 </td>
                             </tr>
