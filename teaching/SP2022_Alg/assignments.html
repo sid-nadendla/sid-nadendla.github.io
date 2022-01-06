@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CPHS Research Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPHS Lab, Home, Missouri University of Science and Technology">
+    <meta name="author" content="">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../css/theme.css" rel="stylesheet">
+
+    <script src='../../js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#header").load("../../header.html");
+        });
+    </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#footer").load("../../footer.html");
+        });
+    </script>
+
+    <script>
+        $('#masthead .nav a').on('click', function() {
+            $('#masthead .nav').find('li.active').removeClass('active');
+            $(this).parent('li').addClass('active');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <div class="container-fluid ">
+            <div class="row-fluid marketing">
+                <div class="row-fluid ">
+                    <hr>
+                    <h2 class="centered">
+                        <a href="index.html">CS 5408: Game Theory for Computing - Fall 2021
+                        </a>
+                    </h2>
+                    <hr>
+
+                    <h3>Assignments</h3>
+                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox">
+                        <tbody>
+                            <tr>
+                                <td class="sites-layout-tile sites-tile-name-content-1">
+                                    <div><a href="./HWs/HW-1.pdf">Homework 1 [PDF]</a> (<a href="./HWs/HW-1-sol.pdf">Solution</a>) -- Due Monday, Sept 13, 2021<br></div>
+                                    <div><br></div>
+                                    <div><a href="./HWs/HW-2.pdf">Homework 2 [PDF]</a> (<a href="./HWs/HW-2-sol.pdf">Solution</a>) -- Due Monday, Oct 4, 2021 (Extended to Friday, Oct 8, 2021)</div>
+                                    <div><br></div>
+                                    <div><a href="./HWs/HW-3.pdf">Homework 3 [PDF]</a> (<a href="./HWs/HW-3-sol.pdf">Solution</a>) -- Due Wednesday, Nov 3, 2021
+                                    </div>
+                                    <div><br></div>
+                                    <div><a href="./HWs/HW-4.pdf">Homework 4 [PDF]</a> (<a href="./HWs/HW-4-sol.pdf">Solution</a>) -- Due Friday, Nov 12, 2021</div>
+                                    <div><br></div>
+                                    <div><a href="./HWs/HW-5.pdf">Homework 5 [PDF]</a> (<a href="./HWs/HW-5-sol.pdf">Solution</a>) -- Due Monday, Nov 22, 2021</div>
+                                    <div><br></div>
+                                    <div><a href="./HWs/HW-6.pdf">Homework 6 [PDF]</a> -- Due Friday, Dec 10, 2021</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+
+                    <h3>Submitting HW Assignments on Gitlab</h3>
+                        <div>
+                            <ol>
+                                <li>Log into <a href="https://git-classes.mst.edu">https://git-classes.mst.edu</a> with your S&T login</li>
+                                <li>Students will be given access to the Git repository as 'developers'. As a result, they can clone the master branch and submit their respective assignments by following the procedure given below:
+                                    <div><br></div>
+                                    <div><br></div>
+                                    <div><font face="arial, sans-serif">Execute once:</font></div>
+                                    <div><font face="courier new, monospace"># To clone a repository:</font></div>
+                                    <div><font face="courier new, monospace">$ git clone &lt;web-address&gt;</font></div>
+                                    <div><br></div>
+                                    <div><br></div>
+                                    <div><font face="arial, sans-serif">Execute as many times as you like from within the directory/repository you cloned to your hard drive (just an example):</font></div>
+                                    <div><font face="courier new, monospace"># To check the status of your repository:</font></div>
+                                    <div><font face="courier new, monospace">$ git status</font></div>
+                                    <div><br></div>
+                                    <div><font face="courier new, monospace"># To stage/add a file:</font></div>
+                                    <div><font face="courier new, monospace">$ git add *.py *.pdf *.md</font></div>
+                                    <div><br></div>
+                                    <div><font face="courier new, monospace"># To add a folder:</font></div>
+                                    <div><font face="courier new, monospace">$ git add SUBDIRECTORY/*</font></div>
+                                    <div><br></div>
+                                    <div><font face="courier new, monospace"># To commit changes and document them:</font></div>
+                                    <div><font face="courier new, monospace">$ git commit -m "Informative description of the commit"</font></div>
+                                    <div><br></div>
+                                    <div><font face="courier new, monospace"># To submit your assignments:</font></div>
+                                    <div><font face="courier new, monospace">$ git push origin HEAD</font></div>
+                                    <div><br></div>
+                                    <div><br></div>
+                                    <div><font face="arial, sans-serif">Do not add:</font></div>
+                                    <div><font face="arial, sans-serif">Compiled or generated files like *.out, *.log, *.syntex.gz, *.bib, your executable files, etc. Put the name of these files in a text file named .gitignore</font></div>
+                                    <div><font face="arial, sans-serif">If you see your changes reflected on the git-classes site, you have submitted successfully.</font></div>
+                                </li>
+                            </ol>
+                        </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer "></div>
+    <!-- Javascript files -->
+    <script src="../../js/jquery-1.9.1.min.js "></script>
+    <script src="../../js/bootstrap.min.js "></script>
+    <script>
+        $('#main-carousel').carousel();
+    </script>
+</body>
+
+</html>
