@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Style for images -->
+<style>
+    .grid { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        justify-items: center;
+        }
+    .grid img {
+        border: 1px solid #ccc;
+        box-shadow: 4px 4px 6px 0px  rgba(0,0,0,0.3);
+        max-width: 75%;
+        text-align: center;
+    }
+    </style>
+
 <head>
     <meta charset="utf-8">
     <title>Research</title>
@@ -47,23 +64,34 @@
             <!-- <div class="span8 offset1"> -->
                 <section id="nano">
                     <div class="page-header">
-                        <h2>Research Projects</h2>
+                        <h2>Current Projects & Facilities</h2>
+                    </div>
+                    <!-- Image of the testbed -->
+                    <div class = "grid">
+                        <img src="images/research/ITS_Sandbox_smaller.jpg" class="carousel-image " alt=" ">                     
                     </div>
                     <div class="row-fluid">
                         <!-- <div class="span12"> -->
-                            <section id="crowdsourcing">
+                            <hr>
+                            
+                            <!-- <section id="crowdsourcing">
                                 <h4>Personalized Crowdsourcing</h4>
                                 <p align='justify'>
                                     TODO
                                 </p>
                             </section>
-                            <hr>
-
-                            <section id="5gnetwork">
-                                <h4>Resource Allocation in Fog-Enabled 5G Networks</h4>
+                            <hr> -->
+                            
+                            <section id="Signaling Games in CPHS">
+                                <h4>Signaling Games in CPHS</h4>
+                                
                                 <p align='justify'>
-                                    TODO
-                                </p>
+                                   Strategic information transmission (SIT) games are two-player signaling games where the sender and the receiver have misaligned motives. Such interactions occur in many practical applications such as markets and media. 
+                                    Crawford and Sobel, in their seminal work in 1981, studied Nash equilibria in strategic information transmission (SIT) games, which later paved the way for many relevant works including optimal information disclosure by ABC in 2009 and Bayesian Persuasion by Kamenica in 2011. 
+                                    However, there is very little work on modeling human-system interaction settings where human agents exhibit behavioral decisions that deviate from expected utility theory. 
+                                    Therefore, in this project, we analyze the effects of human biases on equilibrium strategies in a Stackelberg game, when both the transmitter and the receiver are modeled as PT agents. In the presence of Gaussian source signal and a Gaussian test channel, we have shown that weight functions have no impact on the equilibrium strategies. In the presence of exponential source signals and an exponential test channel, we found that the weight function plays a role in the construction of equilibrium strategies at both the transmitter and the receiver. Currently, we are also looking into the effects of human biases on a deceptive transmitter when the source and message signals are multi-dimensional.
+                                    
+                                 </p>
                             </section>
                             <hr>
 
@@ -84,7 +112,7 @@
                             </section>
                             <hr>
 
-                            <section id="covid19">
+                            <!--                             <section id="covid19">
                                 <h4>COVID-19 Dashboard - Chest X-ray Testing and Interventions</h4>
                                 <br/>
                                 <a href="https://covid19-mst-cphs-lab.appspot.com/">
@@ -96,28 +124,66 @@
                                     images inorder to get the test results. Along with the X-ray images, the tool also displays the PSI and CURB-65 scores. The PSI (Pneumonia Severity Index) score calculates the probability of mortality of patients and
                                     is often used to predict the need for hospitalization in people with pneumonia. The CURB-65 is also a similar score but it is easy to compute.
                                 </p>
-                            </section>
-                            <hr>
+                            </section> 
+                            <hr>-->
 
                             <section id="miner_self_escape">
                                 <h4>Miner Self Escape</h4>
-                                <img src="images/research/miner_self_escape.png" class="float-right" alt="Miner Self Escape" style="width: 30%;" />
+                                <img src="images/research/miner_self_escape.png" class="float-right" alt="Signaling to Enable Miner Self Escape" style="width: 30%;" />
 
                                 <p align='justify'>
-                                    Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Commodo ullamcorper
-                                    a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices
-                                    mi. Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi.
+                                    This work evaluates the effect of increasing level of detail in emergency alerts on underground miners’ emergency evacuation decisions. An offline survey was administered to underground miners, which provided miners simulated alerts with ever-increasing levels of information about fire, cave in, and explosion emergency scenarios. The simulated evacuation exercise evaluated differences in evacuation decisions due to the channel of communication (text message or through a co-worker). The results indicate that the content of the alert messages has a significant effect on miners’ decisions with more miners choosing to evacuate when more detail is provided about the urgency of the situation. The results also indicate that the evacuation decisions of the participants are related to their mining experience, marital status, age, income, and use of technology. Depending on the scenario, 51–70% of the miners chose not to shelter in place or go to the refuge chamber as instructed in the simulation. This tendency to ignore guidance is possibly due to a lack of clarity in the message sent to them or the poorly crafted messages that do not account for how the miners will account for risk under uncertainty. It appears that the miners are acting in a loss-averse manner given the uncertainty, as per prospect theory. This study also concludes that, overall, the channel of communication does not significantly affect the miners’ evacuation decisions. This may bode well for using text message alerts in mine emergency management. This work presents a foundation for developing effective text messages for guiding miners in emergencies by building off existing research on short-form emergency warnings and applying the principles to the mining context to provide evidence for new emergency alert technologies mandated new underground coal mine safety regulations. Future research should evaluate miners’ decision-making using prospect theory to account for miners’ perception of risk under uncertainty, so that persuasive text messages can be designed to elicit safe evacuation decisions.
                                 </p>
                             </section>
                             <hr>
 
                             <section id="blockchain_mining">
                                 <h4>Blockchain Mining</h4>
-                                <img src="images/research/blockchain_mining.png" class="float-right" alt="Blockchain Mining" style="width: 30%;" />
+                                <img src="images/research/blockchain_mining.png" class="float-right" alt="Blockchain Consensus Games" style="width: 30%;" />
                                 <p align='justify'>
-                                    Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Commodo ullamcorper
-                                    a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices
-                                    mi. Commodo ullamcorper a lacus vestibulum sed arcu non. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi.
+                                    Blockchain systems often employ proof-of-work consensus protocols to validate and add transactions into hashchains.
+                                    These protocols involve competition among miners in solving
+                                    cryptopuzzles (e.g. SHA-256 hash computation in Bitcoin) in
+                                    exchange for a monetary reward. Here, we model mining as
+                                    an all-pay auction, where miners’ computational efforts are
+                                    interpreted as bids, and the allocation function is the probability
+                                    of solving the cryptopuzzle in a single attempt with unit (normalized) computational capability. Such an allocation function
+                                    captures how blockchain systems control the difficulty o f the
+                                    cryptopuzzle as a function of miners’ computational abilities
+                                    (bids). In an attempt to reduce mining costs, we investigate
+                                    designing a mining auction mechanism which induces a logit
+                                    equilibrium amongst the miners with choice distributions that
+                                    are unilaterally decreasing with costs at each miner. We show it
+                                    is impossible to design a lenient allocation function that does this.
+                                    Specifically, we show that there exists no allocation function that
+                                    discourages miners to bid higher costs at logit equilibrium, if the
+                                    rate of change of difficulty w ith r espect t o e ach m iner’s c ost is
+                                    bounded by the inverse of the sum of costs of all the miners.
+                                    Additionally, we also show that it is necessary to have allocation
+                                    functions that decrease with increasing number of players. As a
+                                    result, it is difficult t o a chieve d ecentralization a nd accomplish
+                                    secure blockchain systems with global block difficulty which relies
+                                    only on total hash rate.
+                                </p>
+                            </section>
+                            <hr>
+                        
+                            <section id="5gnetwork">
+                                <h4>Resource Allocation in Fog-Enabled 5G Networks</h4>
+                                <p align='justify'>
+                                    Fog computing in 5G networks has played a significant role in increasing the number of users in a given network. 
+                                    However, Internet-of-Things (IoT) has driven system designers towards designing heterogeneous networks to support diverse task demands (e.g. heterogeneous tasks with different priority values) under interference constraints in the presence of limited communication and computational resources. 
+                                    In this paper, our goal is to maximize the total number of tasks served by an IoT-enabled 5G network, labeled \emph{task throughput}, in the presence of heterogeneous task demands and limited resources. 
+                                    Since our original problem is intractable, we propose an efficient two-stage solution based on multi-graph-coloring. 
+                                    We analyze the computational complexity of our proposed algorithm, and prove the correctness of our algorithm. 
+                                    Lastly, simulation results are presented to demonstrate the effectiveness of the proposed algorithm, in comparison with state-of-the-art approaches in the literature.                                </p>
+                                <p align = 'justify'>
+                                    Internet-of-Things (IoT) is a networking architecture where promising, intelligent services are designed via leveraging information from multiple heterogeneous sources of data within the network.
+                                    However, the availability of such information in a timely manner requires processing and communication of raw data collected from these sources. 
+                                    Therefore, the economic feasibility of IoT-enabled networks relies on the efficient allocation of both computational and communication resources within the network. 
+                                    Since fog computing and 5G cellular networks approach this problem independently, there is a need for joint resource-provisioning of both communication and computational resources in the networks. 
+                                    As the solution to this problem, we propose a novel three-dimensional matching based resource provisioning algorithm that minimizes average service latency in the presence of various resource constraints, task deadlines and non-identical preferences at IoT devices, fog access points (FAPs) and small-cell access points (SAPs) in 5G networks.
+                                    We prove the stability and termination of the proposed algorithm and also demonstrate that our proposed algorithm outperforms other state-of-the-art algorithms through both, simulation and realworld experiments on the laboratory test-bed.
                                 </p>
                             </section>
                             <hr>
