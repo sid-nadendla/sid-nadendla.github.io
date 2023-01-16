@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CPHS Research Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPHS Lab, Home, Missouri University of Science and Technology">
+    <meta name="author" content="">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../css/theme.css" rel="stylesheet">
+
+    <script src='../../js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#header").load("../../header.html");
+        });
+    </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#footer").load("../../footer.html");
+        });
+    </script>
+
+    <script>
+        $('#masthead .nav a').on('click', function() {
+            $('#masthead .nav').find('li.active').removeClass('active');
+            $(this).parent('li').addClass('active');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <div class="container-fluid ">
+            <div class="row-fluid marketing">
+                <div class="row-fluid ">
+                    <hr>
+                    <h2 class="centered">
+                        <a href="index.html">CS 6406: Machine Learning for Computer Vision - Spring 2022
+                        </a>
+                    </h2>
+                    <hr>
+                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox">
+                        <tbody>
+                            <tr>
+                                <td class="sites-layout-tile sites-tile-name-content-1">
+                                    <div dir="ltr">
+                                        <h1>Resources</h1>
+                                        <!-- <font size="4"><b>Textbook Information</b></font> -->
+                                        <h2>Textbook Information</h2>
+                                        <div>This course has no textbook. However, we will follow a few reference books and some papers
+                                            listed below:</div>
+
+                                        <h4>Books (DRM-Free Electronic Copies available through MST Library)</h4>
+                                        <div>
+                                            <ol>
+                                                <li><a href="https://learning.oreilly.com/library/view/deep-learning-for/9781617296192/"
+                                                        rel="nofollow" style="font-size:small" target="_blank">Deep Learning for Vision Systems</a><span style="font-size:small">, by Mohamed Elgendy</span></li>
+                                                <li><a href="https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/"
+                                                        rel="nofollow" style="font-size:small" target="_blank">Hands-on Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</a><span style="font-size:small">, by Aurelien Geron</span></li>
+                                            </ol>
+                                        </div>
+                                        
+                                        <h4>Books and Lecture Notes (Accessible Electronic Copies for Free)</h4>
+                                        <div>
+                                            <ol>
+                                                <li><span style="font-size:small"><a href="http://maxim.ece.illinois.edu/teaching/SLT/" rel="nofollow"
+                                                            target="_blank">Statistical Learning Theory</a>, by Bruce Hajek and Maxim Raginsky, Lecture Notes for ECE 543, University of Illinois, Urbana-Champaign, IL, USA, 2021.</span></li>
+                                                <li><span style="font-size:small"><a href="https://mjt.cs.illinois.edu/dlt/" rel="nofollow"
+                                                            target="_blank">Deep Learning Theory</a>, by Matus J. Telgarsky, Lecture Notes for CS 540, Version: 2021-10-27 v0.0-e7150f2d (alpha), University of Illinois, Urbana-Champaign, IL, USA, 2021.</span></li>
+                                                <li><span style="font-size:small"><a href="https://d2l.ai" rel="nofollow"
+                                                            target="_blank">Dive into Deep Learning</a>, by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola.</span></li>
+                                                <li><span style="font-size:small"><a href="https://www.deeplearningbook.org/" rel="nofollow"
+                                                            target="_blank">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio, Aaron Courville.</span></li>
+                                                <li><span style="font-size:small"><a href="http://trustworthymachinelearning.com/" rel="nofollow"
+                                                            target="_blank">Trustworthy Machine Learning</a>, by Kush R. Varshney.</span></li>
+                                            </ol>
+                                        </div>
+
+                                        <hr>
+
+                                        <h2>References for Programming Assignments</h2>
+                                        <div>
+                                            <ol>
+                                                <li><a href="https://www.git-scm.com/book/en/v2">Pro Git</a>, by Scott Chacon and Ben Straub</li>
+                                                <li><a href="https://www.youtube.com/watch?v=4XpnKHJAok8">Linus Torvalds' tech talk at Google on Git</a></li>
+                                                <li><a href="http://web.mst.edu/~taylorpat/Courses_files/DataStructuresLab/Content/tools-for-computer-scientists.pdf">Tools for Computer Scientists by Jarus and Wisely</a></li>
+                                                <li><a href="https://docs.python.org/3/">Python 3.9.6 Official Documentation</a></li>
+                                                <li><a href="https://pytorch.org/docs/stable/index.html">PyTorch Documentation</a></li>
+                                                <li><a href="https://www.tensorflow.org/api_docs">TensorFlow Documentation</a></li>
+                                            </ol>
+                                        </div>
+                                        <hr>
+                                        
+                                        <h2>Relevant Articles (for Self Reading and Case Studies)</h2>
+                                        <div>
+                                            <h4>T1: Fundamentals of Learning</h4>
+                                        </div>
+                                        <div>
+                                            <ol>
+                                                <li>E.D. Sontag. ``VC Dimension of Neural Networks," in <i>Neural Networks and Machine Learning</i>, pp. 69-95, 1998.</li>
+                                            </ol>
+                                        </div>
+
+                                        <h4>T2: Efficient Computation</h4>
+                                        
+                                        <h4>T3: Deep Learning in Computer Vision</h4>
+
+                                        <div>
+                                            <ol>
+                                                <li>Y. LeCun, L. Bottou, Y. Bengio and P. Haffner: Gradient-Based Learning Applied to Document Recognition, in <i>Proceedings of the IEEE</i>, 86(11):2278-2324, November 1998</li>
+                                            </ol>
+                                        </div>
+                                        
+                                        <h4>T4: Trustworthy Vision</h4>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer "></div>
+    <!-- Javascript files -->
+    <script src="../../js/jquery-1.9.1.min.js "></script>
+    <script src="../../js/bootstrap.min.js "></script>
+    <script>
+        $('#main-carousel').carousel();
+    </script>
+</body>
+
+</html>
