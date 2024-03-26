@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Style for images -->
+<style>
+    .grid { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        justify-items: center;
+        }
+    .grid img {
+        border: 1px solid #ccc;
+        box-shadow: 4px 4px 6px 0px  rgba(0,0,0,0.3);
+        max-width: 75%;
+        text-align: center;
+    }
+    </style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPHS Lab, Home, Missouri University of Science and Technology">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+    <script src='js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <hr>
+        <div class="row-fluid">
+            <section id="nano">
+                <div class="page-header">
+                    <h2>Fault Detection in Additively Manufactured Objectss</h2>
+                    
+                    <img src="" class="float-right" alt="fairness" style="width: 30%;" />
+                    
+                    <h4>Background and Objectives</h4>
+                    <p align='justify'>
+                        
+                    </p>
+
+                    <h5>Supporting Agencies</h5>
+                    <img src="images/research/FundingAgencies/boeing_logo.png" class="float-left" alt="AdditiveManufacturing" style="width: 30%;" />
+                    <!-- <ul>
+                        <li>
+                            D. Bristow (PI), V. S. S. Nadendla, 
+                            "CAMT: A Method for Change Management in Additive Manufacturing," 
+                            Center for Aerospace Mfg. Tech. Seed Grant, Missouri S&T, 2021-22.
+                        </li>
+                        <li>
+                            V. S. S. Nadendla (PI), 
+                            "Cold Spray Fingerprinting and Artificial Intelligence for MAI BA 26," 
+                            Boeing, 2023-24.
+                        </li>
+                    </ul> -->
+
+                    <hr>
+
+                    <h4><a href="">Thrust 1: Machine Learning Based Fault Detectors on Voxelated Micro-CT Scans of Additively Manufactured Objects</a></h4>
+                    <p align='justify'>
+                        <img src="" class="float-right" alt="CSNN-BrakingIntent" style="width: 30%;" />
+                         
+                    </p>
+                    <h5>References</h5>
+                    <ul>
+                        <li>
+                            A. Lang, J. Castle, D. A. Bristow, R. G. Landers, and V. S. S. Nadendla, 
+                            "Logistic Regression Classification to Predict Regional Anomalies in Nominally Printed Volume of Separate Test Pieces," 
+                            in <i>Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium – An Additive Manufacturing Conference (SFF’22)</i>, 2022.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(document.body).scrollspy({
+                target: "#navparent"
+            });
+        });
+    </script>
+</body>
+
+</html>

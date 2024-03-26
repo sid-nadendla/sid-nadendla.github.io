@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Style for images -->
+<style>
+    .grid { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        justify-items: center;
+        }
+    .grid img {
+        border: 1px solid #ccc;
+        box-shadow: 4px 4px 6px 0px  rgba(0,0,0,0.3);
+        max-width: 75%;
+        text-align: center;
+    }
+    </style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPHS Lab, Home, Missouri University of Science and Technology">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+    <script src='js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <hr>
+        <div class="row-fluid">
+            <section id="nano">
+                <div class="page-header">
+                    <h2>Cognition-Aware Driver Assistance</h2>
+                    
+                    <img src="images/research/car_driver_interaction.png" class="float-right" alt="fairness" style="width: 30%;" />
+                    
+                    <h4>Background and Objectives</h4>
+                    <p align='justify'>
+                        
+                    </p>
+
+                    <h5>Supporting Agencies</h5>
+                    <img src="" class="float-right" alt="ISC" style="width: 30%;" />
+                    <!-- <ul>
+                        <li>
+                            S. N. Balakrishnan (PI), V. S. S. Nadendla, 
+                            "Design of Effective Interventions for Drunk Driving in Semi-Autonomous Vehicles," 
+                            Center for Smart Living Seed Grant, Missouri S&T, 2019-20.
+                        </li>
+                    </ul> -->
+
+                    <hr>
+
+                    <h4><a href="">Thrust 1: Braking Intent Detection Under Ideal Conditions</a></h4>
+                    <p align='justify'>
+                        <img src="" class="float-right" alt="CSNN-BrakingIntent" style="width: 30%;" />
+                        Spiking neural networks (SNNs) are receiving increased attention because they mimic synaptic connections in biological systems and produce spike trains, which can be approximated by binary values for computational efficiency. 
+                        Recently, the addition of convolutional layers to combine the feature extraction power of convolutional networks with the computational efficiency of SNNs has been introduced. 
+                        This paper studies the feasibility of using a convolutional spiking neural network (CSNN) to detect anticipatory slow cortical potentials (SCPs) related to braking intention in human participants using an electroencephalogram (EEG). 
+                        Data was collected during an experiment wherein participants operated a remote-controlled vehicle on a testbed designed to simulate an urban environment. 
+                        Participants were alerted to an incoming braking event via an audio countdown to elicit anticipatory potentials that were measured using an EEG. 
+                        The CSNN’s performance was compared to a standard CNN, EEGNet and three graph neural networks via 10-fold cross-validation. 
+                        The CSNN outperformed all the other neural networks, and had a predictive accuracy of 99.06\% with a true positive rate of 98.50\%, a true negative rate of 99.20\% and an F1-score of 0.98. 
+                        Performance of the CSNN was comparable to the CNN in an ablation study using a subset of EEG channels that localized SCPs. 
+                        Classification performance of the CSNN degraded only slightly when the floating-point EEG data were converted into spike trains via delta modulation to mimic synaptic connections. 
+                    </p>
+                    <h5>References</h5>
+                    <ul>
+                        <li>
+                            N. Lutes, V. S. S. Nadendla, and K. Krishnamurthy, 
+                            "<a href="https://arxiv.org/abs/2208.06900">Convolutional Spiking Neural Networks for Detecting Anticipatory Brain Potentials Using Electroencephalogram</a>," 
+                            Submitted to <i>Scientific Reports</i>, 2023 
+                            <br/><br/>
+                            (<a href="https://github.com/sid-nadendla/BI-SpikeEEG">GitHub</a>) 
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h4><a href="">Thrust 2: Braking Intent Detection Under Distraction and Fatigue</a></h4>
+                    <p align='justify'></p>
+                    <h5>References</h5>
+                    <ul>
+                        <li>Journal of Neural Engineering, 2024</li>
+                    </ul>
+
+                    <hr>
+                    
+                    <h4><a href="">Thrust 3: Strategic Interventions for Open-Quantum Cognition Drivers</a></h4>
+                    <p align='justify'>
+                        State-of-the-art driver-assist systems have failed to effectively mitigate driver inattention and had minimal impacts on the ever-growing number of road mishaps (e.g. life loss, physical injuries due to accidents caused by various factors that lead to driver inattention).  
+                        This is because state-of-the-art human-machine interaction models still lack psychological insights to the characterization of the attention level of the driver. 
+                        Therefore, in an attempt to improve the persuasive effectiveness of driver-assist systems, we develop a novel strategic and personalized driver-assist system which adapts to the driver's mental state and choice behavior. 
+                        First, we propose a novel equilibrium notion in human-system interaction games, where the system maximizes its expected utility and human decisions can be characterized using any general decision model. 
+                        Then we use this novel equilibrium notion to investigate the strategic driver-vehicle interaction game where the car presents a persuasive recommendation to steer the driver towards safer driving decisions. 
+                        We assume that the driver employs an open-quantum system cognition model, which captures complex aspects of human decision making such as violations to classical law of total probability and incompatibility of certain mental representations of information. 
+                        We present closed-form expressions for players' final responses to each other's strategies so that we can numerically compute both pure and mixed equilibria. 
+                        Numerical results are presented to illustrate both kinds of equilibria.
+                    </p>
+                    <h5>References</h5>
+                    <ul>
+                        <li>
+                            Q. Zhang, V. S. S. Nadendla, S. N. Balakrishnan, and J. Busemeyer, 
+                            "<a href="https://arxiv.org/abs/2107.09888">Strategic Mitigation of Agent Inattention in Drivers with Open-Quantum Cognition Models</a>," 
+                            Submitted to <i>IEEE Transactions on Human-Machine Systems</i> (Accepted with Minor Comments), 2022.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(document.body).scrollspy({
+                target: "#navparent"
+            });
+        });
+    </script>
+</body>
+
+</html>
