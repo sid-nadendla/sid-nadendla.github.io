@@ -36,15 +36,37 @@
                 <div class="page-header">
                     <h2>Fair Kidney Placement</h2>
                     
-                    <img src="images/research/machine-bias.png" class="float-right" alt="fairness" style="width: 30%;" />
+                    <img src="../../images/research/machine-bias.png" class="float-right" alt="fairness" style="width: 30%;" />
                     
                     <h4>Background and Objectives</h4>
                     <p align='justify'>
-
+                        Transplantation provides patients suffering from end-stage kidney disease a better quality of life and long-term survival. 
+                        However, approximately 20% of deceased donor kidneys are discarded and never transplanted. 
+                        While some discards may be medically appropriate, others reflect missed opportunities. 
+                        Even kidneys deemed less desirable may provide survival benefits to some recipients. 
+                        Organ Procurement Organizations (OPOs) have great difficulty finding transplant centers to accept less medically desirable (or higher risk) kidneys. 
+                        At their discretion, OPOs can use accelerated placement to bypass the priority list for “hard-to-place” kidneys. 
+                        However, due to a lack of data-driven guidance, this mechanism is not systematically applied, likely underutilized and could lead to biased outcomes across protected groups in the society.
+                        To enable transformative change, this project investigates biases in Artificial Intelligence (AI) decision support and develops fair systems into the kidney offer process to support both demand at the transplant center and supply at the OPO. 
+                        Key workers include OPO staff (organ procurement coordinators, operations directors, medical directors), transplant center staff (coordinators, physicians, surgeons), and transplant patients. 
+                        
+                        The main objectives of this project are 
+                        <ol>
+                            <li>
+                                measure diverse stakeholder preferences to analyze biases within the AI support system’s operation and interface, and
+                            </li>
+                            <li>
+                                aggregate fairness preferences across diverse stakeholders,
+                            </li>
+                            <li>
+                                improve fairness in the model output, based on the prescribed aggregated fairness notion.
+                            </li>
+                        </ol>
+                        This research is driven by an existing partnership between transplant and ethics experts at Saint Louis University Hospital (SLU), behavioral scientists at UNOS, and experts in AI and human factors from Missouri S&T.
                     </p>
 
                     <h5>Supporting Agencies</h5>
-                    <img src="images/research/FundingAgencies/nsf_logo.jpeg" class="float-left" alt="NSF" style="width: 30%;" />
+                    <img src="../../images/research/FundingAgencies/nsf_logo.jpeg" class="float-left" alt="NSF" style="width: 30%;" />
                     <!-- <ul>
                         <li>
                             C. Canfield (PI), C. Dagli, D. Shank, V. S. S. Nadendla, 
@@ -53,22 +75,45 @@
                         </li>
                     </ul> -->
 
+                    <h5>Contributors</h5>
+                    <img src="../../images/Students/MukundTelukunta.jpeg" class="float-left" alt="NSF" style="width: 10%;" />
                     <hr>
 
                     <h4><a href="">Thrust 1: Learning and Aggregating Fairness Preferences of Diverse Stakeholders</a></h4>
-                    <p align='justify'></p>
+                    <p align='justify'>
+                        Modern kidney placement incorporates several intelligent recommendation systems which exhibit social discrimination due to biases inherited from training data. 
+                        Although initial attempts were made in the literature to study algorithmic fairness in kidney placement, these methods replace true outcomes with surgeons' decisions due to the long delays involved in recording such outcomes reliably. 
+                        However, the replacement of true outcomes with surgeons' decisions disregards expert stakeholders' biases as well as social opinions of other stakeholders who do not possess medical expertise. 
+                        This paper alleviates the latter concern and designs a novel fairness feedback survey to evaluate an acceptance rate predictor (ARP) that predicts a kidney's acceptance rate in a given kidney-match pair. 
+                        The survey is launched on Prolific, a crowdsourcing platform, and public opinions are collected from 85 anonymous crowd participants. 
+                        A novel social fairness preference learning algorithm is proposed based on minimizing social feedback regret computed using a novel logit-based fairness feedback model. 
+                        The proposed model and learning algorithm are both validated using simulation experiments as well as Prolific data. 
+                        Public preferences towards group fairness notions in the context of kidney placement have been estimated and discussed in detail. 
+                        The specific ARP tested in the Prolific survey has been deemed fair by the participants.
+                    </p>
+                    <img src="../../images/research/FairKidneyPlacement/CHIL24_FairnessPreferences.png" class="float-left" alt="NSF" style="width: 30%;" />
                     <h5>References</h5>
                     <ul>
-                        <li>CHIL'2024</li>
+                        <li>
+                            M. Telukunta, S. Rao, G. Stickney, V. S. S. Nadendla, and C. Canfield, 
+                            “Learning Social Fairness Preferences from Non-Expert Stakeholder Opinions in Kidney Placement,”
+                            Submitted to <i>Conference on Health, Inference and Learning (CHIL’24)</i>, 2024. 
+                        </li>
                     </ul>
 
                     <hr>
 
                     <h4><a href="">Thrust 2: Fairness Through Disagreements</a></h4>
-                    <p align='justify'></p>
+                    <p align='justify'>
+
+                    </p>
                     <h5>References</h5>
                     <ul>
-                        <li>BIAS'2023</li>
+                        <li>
+                            M. Telukunta⋆ and V. S. S. Nadendla, 
+                            “Towards Inclusive Fairness Evaluation via Eliciting Disagreement Feedback from Non-Expert Stakeholders,” 
+                            in <i>3rd Workshop on Bias and Fairness in AI (BIAS’23) at ECML-PKDD Conference</i>, Turin, Italy, 2023.
+                        </li>
                     </ul>
 
                     <hr>
@@ -86,7 +131,12 @@
                     </p>
                     <h5>References</h5>
                     <ul>
-                        <li>FAccTRec'2021</li>
+                        <li>
+                            M. Telukunta and V. S. S. Nadendla, 
+                            “On the Identification of Fair Auditors to Evaluate Recommender Systems based on a Novel Non-Comparative Fairness Notion,” 
+                            in <i>Third FAccTRec Workshop on Responsible Recommendation (FAccTRec’20)</i>, September 2020. 
+                            Available: https://arxiv.org/pdf/2009.04383.pdf
+                        </li>
                     </ul>
                 </div>
             </section>
