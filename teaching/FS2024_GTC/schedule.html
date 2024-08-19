@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CPHS Research Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPHS Lab, Home, Missouri University of Science and Technology">
+    <meta name="author" content="">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../css/theme.css" rel="stylesheet">
+
+    <script src='../../js/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#header").load("../../header.html");
+        });
+    </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#footer").load("../../footer.html");
+        });
+    </script>
+
+    <script>
+        $('#masthead .nav a').on('click', function() {
+            $('#masthead .nav').find('li.active').removeClass('active');
+            $(this).parent('li').addClass('active');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <div class="container-fluid ">
+            <div class="row-fluid marketing">
+                <div class="row-fluid ">
+                    <hr>
+                    <h2 class="centered">
+                        <a href="index.html">CS 5408: Game Theory for Computing - Fall 2024
+                        </a>
+                    </h2>
+                    <hr>
+                    <h3 class="centered">Legend for Reading Assignments</h3>
+                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><br>
+                        <table border="1" bordercolor="#888" cellspacing="0" style="font-size:13.3333px;text-align:center;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                        <tbody>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px"><b><font color="#369e33">Label</font></b></td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"><b><font color="#369e33">Reference / Book</font></b></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px">M</td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"><a href="https://search.ebscohost.com/login.aspx?direct=true&AuthType=sso&db=nlebk&AN=562543&site=eds-live&scope=site&custid=081-800&ebv=EB&ppid=pp_Front_Cover">Game Theory: Analysis of Conflict</a>, by Roger B. Myerson</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px">S-LB</td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"><a href="http://www.masfoundations.org/">Multiagent Systems</a>, by Yoav Shoham and Kevin Leyton-Brown</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px">EK</td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"><a href="https://www.cs.cornell.edu/home/kleinber/networks-book/">Networks, Crowds and Markets</a>, by David Easley and Jon Kleinberg</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px">NRTV</td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"><a href="https://www.cambridge.org/files/3914/7629/0049/Algorithmic_Game_Theory.pdf">Algorithmic Game Theory</a>, Edited by Noam Nisam, Tim Roughgarden, Eva Tardos and Vijay V. Vazirani</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px">VN-M</td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"><a href="">Theory of Games and Economic Behavior</a>, by John Von Neumann and Oskar Morgenstern</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:200px;height:20px">Z</td>
+                        <td style="vertical-align:middle;width:1000px;height:20px"> P. Zafra, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/9780470400531.eorms0471">Linear Programming and Two‐Person Zero‐Sum Games</a>, in Wiley Encyclopedia of Operations Research and Management Science (eds J. J. Cochran et al.), 2011.</td>
+                        </tr>
+                        </tbody>
+                    </table></div></td></tr></tbody></table>
+                    <hr>
+                    <h3 class="centered">Jupyter Notebooks</h3>
+                    <div> All Jupyter Notebooks used in lectures can be found <a href="https://github.com/sid-nadendla/GTC_Examples">here</a>. </div>
+                    <hr>
+                    <h3 class="centered">Tentative Schedule</h3>
+                    <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><br>
+                        <table border="1" bordercolor="#888" cellspacing="0" style="font-size:13.3333px;text-align:center;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                        <tbody>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px"><b><font color="#369e33">Lecture #</font></b></td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><b><font color="#369e33">Date</font></b></td>
+                        <td style="vertical-align:middle;width:150px;height:20px"><b><font color="#369e33">Topic and Slides</font></b></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><b><font color="#369e33">Subtopics</font></b></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"><b><font color="#369e33">Reading Assignment</font></b></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">1</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Aug 20</td>
+                        <td style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T0-Introduction.pdf">T0: Introduction</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><span style="font-size:13.3333px">Introduction, Applications, Course Prerequisites and Expectations</span></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">2</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Aug 22</td>
+                        <td rowspan="3" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T1-DecisionTheory.pdf">T1: Decision Theory</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Choice Experiments, Lotteries, St. Petersburg's Paradox, Preference Relations</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">M: Chapters 1.1-1.4</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">3</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Aug 27</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Preference Axioms, Expected Utility Maximization, Violations, Bounded Rationality</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">M: Chapters 1.5-1.7</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">4</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Aug 29</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Allias Paradox, Prospect Theory, Domination</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">M: Chapters 1.8</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">5</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Sep 3</td>
+                        <td rowspan="6" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T2-BasicModels.pdf">T2: Basic Models and Solution Concepts</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Introduction to Games, Representation: Normal-form, Extensive-form</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">M: Chapters 2.1-2.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">6</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Sep 5</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Information Sets: Imperfect Information, Nature's Randomness, Incomplete Information</td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">7</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Sep 10</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Transformation from Extensive-form to Normal-form Representation,  Iter. Elimination of Dominated Strategies</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">M: Chapters 2-3-2.5</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">8</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Sep 12</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Zero-sum Games, Minimax Equilibrium</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapters 3.4.1, VN-M: Chapters 3-6</td>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">9</td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><font color="#808000">Sep 17</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#808000">Recorded: Nash Equilibrium, Potential Games, Congestion Games</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"><font color="#808000">M: Chapters 3.2-3.3, S-LB: Chapters 6.4</font></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">10</td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><font color="#808000">Sep 19</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#808000">Recorded: Congestion Games, Linear Programming</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"><font color="#808000">S-LB: Chapter 6.4, S-LB: Appendix B, Z</font></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">11</td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><font color="#ff0000">Sept 24</font></td>
+                        <td style="vertical-align:middle;width:150px;height:20px"><font color="#ff0000">No Class</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#ff0000">Career Fair Day</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">12</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Sep 26</td>
+                        <td rowspan="2" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T2-BasicModels.pdf">T2: Basic Models and Solution Concepts (cont.)</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Linear Programming to Solve Two-Player Zero-Sum Games</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapters 4.1, Z</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">13</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 1</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Equilibria in Bayesian Normal-Form Games</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 6.3</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">14</td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><font color="#ff0000">Oct 3</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#ff0000">No Class</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"><font color="#ff0000">Fall Break</font></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">15</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 8</td>
+                        <td rowspan="3" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T3-CoalitionalGames.pdf">T3: Coalitional Games</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Transferable Utilities and Strategic Coalitions</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 12.1</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">16</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 10</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Fair Distribution and Shapley Value</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 12.2.1</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">17</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 15</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Team Stability and Core</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 12.2.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">18</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 17</td>
+                        <td rowspan="1" style="vertical-align:middle;width:150px;height:20px"><font color="#ff0000">Topics 1 and 2</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#ff0000">EXAM 1</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">19</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 22</td>
+                        <td rowspan="6" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T4-DynamicGames.pdf">T4: Dynamic Games</a><br><a href="Handouts/Handout-SignalingGames.pdf">Handout: Signaling Games</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Stackelberg Games</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapters 5.1, 5.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">20</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 24</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Subgame Perfect Equilibrium</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 5.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">21</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 29</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Equilibria in Imperfect Extensive-Form Games</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 5.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">22</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Oct 31</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Sequential Equilibrium</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 5.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">23</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Nov 5</td>
+                        <!-- <td rowspan="3" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T5-MechanismDesign.pdf">T5: Mechanism Design</a></td> -->
+                        <td style="vertical-align:middle;width:800px;height:20px">Sequential Equilibrium (cont...)</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 5.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">24</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Nov 7</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Bayesian Perfect Equilibrium</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 5.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">25</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Nov 12</td>
+                        <td rowspan="2" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T5-MechanismDesign.pdf">T5: Mechanism Design</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Social Choice, Revelation Principle, Truthfulness, </td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapters 9.1, 9.2, 10.1, 10.2</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">26</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Nov 14</td>
+                        <!-- <td style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T6-AdvSolutionConcepts.pdf">T6: Advanced Solution Concepts</a></td> -->
+                        <td style="vertical-align:middle;width:800px;height:20px">Voting Mechanisms and Their Applications</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 9.3, EK: Chapter 23</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">27</td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><font color="#ff0000">Nov 19</font></td>
+                        <td style="vertical-align:middle;width:150px;height:20px"><font color="#ff0000">No Class</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#ff0000">Thanksgiving Break</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:24px">28</td>
+                        <td style="vertical-align:middle;width:80px;height:24px"><font color="#ff0000">Nov 21</font></td>
+                        <td style="vertical-align:middle;width:150px;height:20px"><font color="#ff0000">No Class</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#ff0000">Thanksgiving Break</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:24px">29</td>
+                        <td style="vertical-align:middle;width:80px;height:24px">Nov 26</td>
+                        <td rowspan="1" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T5-MechanismDesign.pdf">T5: Mechanism Design</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">VCG Mechanisms, Auctions and Their Applications</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapters 10.3, 10.4, EK: Chapters 9, 15</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">30</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Nov 28</td> 
+                        <td rowspan="2" style="vertical-align:middle;width:150px;height:20px"><a href="LectureNotes/GTC-T6-AdvSolutionConcepts.pdf">T6: Advanced Solution Concepts</a></td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Games with Contracts and Correlated Equilibrium</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">S-LB: Chapter 4.6</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">31</td>
+                        <td style="vertical-align:middle;width:80px;height:20px">Dec 3</td>
+                        <td style="vertical-align:middle;width:800px;height:20px">Evolutionarily Stable Strategies</td>
+                        <td style="vertical-align:middle;width:182px;height:20px">EK: Chapter 7</td>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align:middle;width:80px;height:20px">32</td>
+                        <td style="vertical-align:middle;width:80px;height:20px"><font color="#ff0000">Dec 5</font></td>
+                        <td style="vertical-align:middle;width:150px;height:20px"><font color="#ff0000">Topics 3-5</font></td>
+                        <td style="vertical-align:middle;width:800px;height:20px"><font color="#ff0000">EXAM 2</font></td>
+                        <td style="vertical-align:middle;width:182px;height:20px"></td>
+                        </tr>
+                        </tbody>
+                        </table></div></td></tr></tbody></table>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer "></div>
+    <!-- Javascript files -->
+    <script src="../../js/jquery-1.9.1.min.js "></script>
+    <script src="../../js/bootstrap.min.js "></script>
+    <script>
+        $('#main-carousel').carousel();
+    </script>
+</body>
+
+</html>
